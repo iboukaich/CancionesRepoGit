@@ -1,6 +1,7 @@
 
 /**
  * clase para construir canciones y sus metodos
+ * 
  * @author imanbt
  * @version 2022
  *
@@ -14,8 +15,7 @@ public class Cancion {
 	// Definimos los constructores
 
 	/**
-	 * constructor por defecto sin titulo, duracion y
-	 * no esta sonando
+	 * constructor por defecto sin titulo, duracion y no esta sonando
 	 */
 	Cancion() // Constructor sin parámetros
 	{
@@ -25,8 +25,8 @@ public class Cancion {
 	}
 
 	/**
-	 * constructor para crear una cancion con un 
-	 * titulo y una duracion
+	 * constructor para crear una cancion con un titulo y una duracion
+	 * 
 	 * @param titulo
 	 * @param duracion
 	 */
@@ -38,8 +38,9 @@ public class Cancion {
 	}
 
 	/**
-	 * constructor para crear una cancion con un titulo, un grupo,
-	 * una duracion y para señalar si esta sonando o no
+	 * constructor para crear una cancion con un titulo, un grupo, una duracion y
+	 * para señalar si esta sonando o no
+	 * 
 	 * @param titulo
 	 * @param grupo
 	 * @param duracion
@@ -55,6 +56,7 @@ public class Cancion {
 
 	/**
 	 * metodo para reproducir una cancion
+	 * 
 	 * @return el valor de sonando en true
 	 */
 	boolean reproducirCancion() {
@@ -68,6 +70,7 @@ public class Cancion {
 
 	/**
 	 * metodo para parar de reproducir una cancion
+	 * 
 	 * @return el valor de sonando en false
 	 */
 	boolean pararCancion() {
@@ -121,6 +124,7 @@ public class Cancion {
 
 	/**
 	 * metodo para mostrar la mayor duracion de las canciones
+	 * 
 	 * @param canciones
 	 * @return el titulo de la cancion con mayor duracion
 	 */
@@ -139,6 +143,7 @@ public class Cancion {
 
 	/**
 	 * metodo para mostrar cual es la siguiente cancion
+	 * 
 	 * @param canciones
 	 * @param titulo
 	 * @return titulo de la siguiente cancion
@@ -161,7 +166,8 @@ public class Cancion {
 
 	@Override
 	public String toString() {
-		return "Cancion [titulo=" + titulo + ", autor=" + grupo + ", duracion=" + duracion + ", sonando=" + sonando
-				+ "]";
+		return "Datos de la canción [titulo=" + titulo + ", autor=" + grupo + ", duracion=" + duracion + ", sonando="
+				+ sonando + "]";
 	}
+
 }
